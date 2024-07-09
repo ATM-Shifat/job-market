@@ -12,5 +12,5 @@ import JobListings from '@/components/JobListings.vue'
   <Hero />
   <HomeCards/>
   <!-- <HomeCards bg_color="bg-red-100"/> -->
-  <JobListings limit="3" :showButton="true"/>
+  <JobListings :limit="3" :show-button="false" />
 </template>
