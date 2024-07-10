@@ -5,7 +5,7 @@ import logo from '@/assets/img/logo.png'
 
 const isActive = (routePath) => {
     const route = useRoute();
-
+    
     return route.path === routePath;
 } 
 
