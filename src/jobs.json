@@ -97,6 +97,20 @@
         "contactEmail": "tapas@mailinator.com",
         "contactPhone": "+1 (529) 824-5343"
       }
+    },
+    {
+      "id": "0df7",
+      "type": "Remote",
+      "title": "Leo Byers",
+      "description": "Commodo est dolor q",
+      "salary": "Under $50K",
+      "location": "Occaecat voluptates ",
+      "company": {
+        "name": "Odonnell and Robles Traders",
+        "description": "Voluptate dolor fugi",
+        "contactEmail": "vubi@mailinator.com",
+        "contactPhone": "+1 (486) 111-2122"
+      }
     }
   ]
 }

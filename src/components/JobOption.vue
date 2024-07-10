@@ -12,6 +12,7 @@ const router = useRouter();
 const toast = useToast();
 
 const jobId = typeof(route.params.id) === "undefined" ? -1 : route.params.id;
+const path = typeof(route.params.id) === "undefined" ? '/' : `/jobs/${route.params.id}`;
 
 const state = reactive({
     job: Object,
@@ -111,7 +112,7 @@ if(jobId !== -1){
  
  <section class="bg-green-50">
       
-      <BackButton path="/"/>
+      <BackButton :path="path"/>
 
       <div v-if="state.isLoading === true" class="text-center tet-gray-500 py-6">
         <PulseLoader />
