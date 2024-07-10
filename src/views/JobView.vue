@@ -11,6 +11,8 @@ const route = useRoute();
 const router = useRouter();
 const toast = useToast();
 
+const jobId = route.params.id;
+
 const state = reactive({
   job: Object,
   isLoading: true,
@@ -20,7 +22,7 @@ const deleteJob = async () =>{
   try{
     const confirm = window.confirm("Are you sure you want to delete this job listing?");
     if(confirm){
-      await axios.delete(`/api/jobs/${state.job.id}`);
+      await axios.delete(`/api/jobs/${jobId}`);
       router.push('/jobs');
       toast.success('Job deleted successfully');
     }
