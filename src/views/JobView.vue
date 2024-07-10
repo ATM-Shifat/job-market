@@ -14,7 +14,7 @@ const state = reactive({
 
 onMounted(async ()=> {
   try{
-    const response = await axios.get('http://localhost:5000/jobs/' + useRoute().params.id);
+    const response = await axios.get('/api/jobs/' + useRoute().params.id);
     state.job = response.data;
 
 
